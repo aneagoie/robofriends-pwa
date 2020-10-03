@@ -7,7 +7,7 @@ import {
 
 const initialStateSearch = {
   searchField: ''
-}
+} 
 
 export const searchRobots = (state=initialStateSearch, action={}) => {
   switch (action.type) {
