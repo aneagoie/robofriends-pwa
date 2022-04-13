@@ -1,20 +1,30 @@
 version: 2.1
 jobs:
-  bobby:
+  build:
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: circleci/node:lastest
     steps:
       - checkout
-      - run: echo "Helllooo"
-  sally:
+      - run: echo "npm install"
+      - run: npm install
+      - run: CI=true npm run build
+  test:
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: circleci/node:latest
+    steps:
+      - run: echo "TESTING"
+      - run: npm install
+      - run: npm test
+  hithere:
     steps:
       - checkout
-      - run: echo "Double new branch test"
+      - run: "HELLLOOO"
 workflows:
   version: 2
-  bobby_sally:
+  build_test_and_list:
     jobs:
-      - bobby
-      - sally
+      - build
+      - hithere
+      - test:
+          requires:
+            - hithere
