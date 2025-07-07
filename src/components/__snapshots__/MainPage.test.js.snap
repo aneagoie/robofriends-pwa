@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the MainPage component without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="tc"
+  >
+    <div>
+      <h1
+        class="f1"
+      >
+        RoboFriends
+      </h1>
+      <button
+        data-testid="counter"
+      >
+        Count: 1
+      </button>
+    </div>
+    <div
+      class="pa2"
+    >
+      <input
+        aria-label="Search"
+        class="pa3 ba b--green bg-lightest-blue"
+        placeholder="search robots"
+        type="search"
+      />
+    </div>
+    <div
+      style="overflow: scroll; border: 5px solid black; height: 800px;"
+    >
+      <div>
+        <div
+          class="tc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5"
+        >
+          <img
+            alt="robots"
+            src="https://robohash.org/3?size=200x200"
+          />
+          <div>
+            <h2>
+              John
+            </h2>
+            <p>
+              john@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
