@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the CounterButton component correctly 1`] = `
+<DocumentFragment>
+  <button
+    color="red"
+    data-testid="counter"
+  >
+    Count: 1
+  </button>
+</DocumentFragment>
+`;
