@@ -10,11 +10,19 @@ let wrapper;
 
 const mockProps = {
     onRequestRobots: jest.fn(),
-    robots: [{
+    robots: [
+        {
         id: 3,
         name: 'John',
         email: 'john@gmail.com'
-    }],
+         },
+        {
+        id: 4, 
+        name: "Alex",
+        email: "alex@gmail.com",
+        }
+
+],
     searchField: '',
     isPending: false,
 };
@@ -28,7 +36,7 @@ it("renders the MainPage component without crashing", () => {
 })
 
 it('filters robots correctly', () => {
- expect(filterRobots(mockProps.robots, '')).toEqual([{
+ expect(filterRobots(mockProps.robots, 'j')).toEqual([{
     id: 3,
     name: 'John',
     email: 'john@gmail.com'
