@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the CardList component correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="tc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5"
+    >
+      <img
+        alt="robots"
+        src="https://robohash.org/1?size=200x200"
+      />
+      <div>
+        <h2>
+          John Snow
+        </h2>
+        <p>
+          jhon@gmail.com
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
